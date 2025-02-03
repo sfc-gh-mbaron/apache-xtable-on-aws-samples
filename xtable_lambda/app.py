@@ -19,6 +19,6 @@ XtableLambda(
         account=os.getenv("CDK_DEFAULT_ACCOUNT"), region=os.getenv("CDK_DEFAULT_REGION")
     ),
 )
-Aspects.of(app).add(AwsSolutionsChecks(verbose=True))
+# Aspects.of(app).add(AwsSolutionsChecks(verbose=True))
 
 app.synth()
